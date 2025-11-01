@@ -59,7 +59,7 @@ def search_prompt(question=None):
         )
 
         llm = ChatOpenAI(
-            model=os.getenv("OPENAI_LLM_MODEL", "gpt-4o-mini"),
+            model=os.getenv("OPENAI_LLM_MODEL", "gpt-5-nano"),
             temperature=0
         )
 

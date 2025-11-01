@@ -123,7 +123,13 @@ git clone https://github.com/igorspestana/mba-ia-desafio-ingestao-busca
 cd mba-ia-desafio-ingestao-busca
 ```
 
-### 2. Configure o ambiente virtual
+### 2. Instale o módulo de ambiente virtual (caso ainda não tenha)
+
+```bash
+sudo apt install python3-venv
+```
+
+### 3. Configure o ambiente virtual
 
 ```bash
 # Criar ambiente virtual
@@ -136,13 +142,13 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 3. Instale as dependências
+### 4. Instale as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure as variáveis de ambiente
+### 5. Configure as variáveis de ambiente
 
 Crie um arquivo `.env` na raiz do projeto e defina as variáveis:
 
@@ -156,7 +162,7 @@ PG_VECTOR_COLLECTION_NAME=
 PDF_PATH=reports/spreadsheet_report.pdf
 ```
 
-### 5. Inicie o banco de dados
+### 6. Inicie o banco de dados
 
 ```bash
 docker compose up -d
@@ -193,7 +199,7 @@ Digite 'sair' para encerrar o chat.
 ============================================================
 ✅ Chat inicializado com sucesso!
 
-PERGUNTA: Qual é o faturamento da empresa?
+PERGUNTA: Qual o faturamento da Empresa SuperTechIABrazil?
 🔍 Buscando informações...
 RESPOSTA: O faturamento foi de 10 milhões de reais.
 ------------------------------------------------------------
